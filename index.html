@@ -8,6 +8,69 @@
     <title>OhSo_Bored</title>
 </head>
 <body>
+    <button class="button">BORED</button>
+    <style>
+        /* Optional CSS styling for the dropdown button */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          min-width: 160px;
+          z-index: 1;
+        }
+    
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+    
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Education</a>
+          <a href="#">Recreational</a>
+          <a href="#">Social</a>
+          <a href="#">D.I.Y.</a>
+          <a href="#">Chrity</a>
+          <a href="#">Cooking</a>
+          <a href="#">Relaxation</a>
+          <a href="#">Music</a>
+          <a href="#">Busywork</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image.jpg" alt="Card Image">
+        <div class="card-content">
+          <h3>Card Title</h3>
+          <p>Card description or content goes here.</p>
+        </div>
+      </div>
+    </body>
+    </html>
     <script src="script.js"></script> 
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-content">
+          <div class="box">
+            <p>Modal JS example</p>
+            <!-- Your content -->
+          </div>
+        </div>
+      
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>  
 </body>
 </html>
