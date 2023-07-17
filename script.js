@@ -1,4 +1,7 @@
 //the call to bored API
+var dropdownHeader = document.querySelector(".dropbtn")
+var dropdownOptions = document.querySelector(".dropdown-content")
+
 fetch("https://www.boredapi.com/api/activity")
 .then(function(response){
     //console.log(response.status)
@@ -22,3 +25,12 @@ fetch("https://api.giphy.com/v1/gifs/search?api_key=PRySORNjXGxSwtXPYa9rBLmB9WAF
     var GIFImage = GIF.images.original.url
     console.log(GIFImage)
 })
+
+function selectOption(event){
+    var selectedOption = event.target.innerText
+    dropdownHeader.innerText = selectedOption
+    
+}
+
+//event listener for the dropdown to select which option the user wants
+dropdownOptions.addEventListener("click", selectOption)
