@@ -33,9 +33,4 @@ body{
     margin: 0;
   }
 
-  .my-custom-modal .modal-background {
-    background-color: rgba(83, 81, 81, 0.6);
-    backdrop-filter: blur(8px); 
-}
-
 
