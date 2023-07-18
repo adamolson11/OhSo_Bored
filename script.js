@@ -5,8 +5,27 @@ var dropdownOptions = document.querySelector(".dropdown-content")
 var boredAPIResponse = document.querySelector(".boredAPI")
 var GIFEl = document.querySelector(".giphy-gif")
 
+function getCategory(){
+    var type
+    var dropdownHeaderText = dropdownHeader.innerText
+    if (dropdownHeaderText === "Dropdown"){
+        type = ''
+    } else {
+        //the API query takes the category in lowercase
+        dropdownHeaderText = dropdownHeaderText[0].toLowerCase() + dropdownHeaderText.substring(1)
+        if (dropdownHeaderText === "d.I.Y."){
+            dropdownHeaderText = "diy"
+        }
+        type = '?type=' + dropdownHeaderText
+        console.log(type)
+    }
+    return type
+}
+
 function getThingToDo(){
-    fetch("https://www.boredapi.com/api/activity")
+    var type = getCategory()
+    
+    fetch("https://www.boredapi.com/api/activity" + type)
     .then(function(response){
         //console.log(response.status)
         return response.json()
