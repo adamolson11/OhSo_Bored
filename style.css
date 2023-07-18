@@ -32,3 +32,10 @@ body{
   .card p {
     margin: 0;
   }
+
+  .my-custom-modal .modal-background {
+    background-color: rgba(0, 0, 0, 0.6); /* Set a semi-transparent black color */
+    backdrop-filter: blur(8px); /* Apply a blur effect */
+}
+
+
