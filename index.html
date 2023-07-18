@@ -2,37 +2,41 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhSo_Bored</title>
 </head>
 <body>
-    <button class="button">BORED</button>
-
-    <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
-        <div class="dropdown-content">
-            <a href="#">Education</a>
-            <a href="#">Recreational</a>
-            <a href="#">Social</a>
-            <a href="#">D.I.Y.</a>
-            <a href="#">Chrity</a>
-            <a href="#">Cooking</a>
-            <a href="#">Relaxation</a>
-            <a href="#">Music</a>
-            <a href="#">Busywork</a>
+    <header class="container">
+        <button class="button">BORED</button>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Education</a>
+                <a href="#">Recreational</a>
+                <a href="#">Social</a>
+                <a href="#">D.I.Y.</a>
+                <a href="#">Charity</a>
+                <a href="#">Cooking</a>
+                <a href="#">Relaxation</a>
+                <a href="#">Music</a>
+                <a href="#">Busywork</a>
+            </div>
+        </div>
+    </header>
+    <div class="card container">
+        <div class="card-content">
+            <!-- <h3>Card Title</h3> -->
+            <p class="boredAPI"></p>
         </div>
     </div>
-
-    <div class="card">
-        <img src="image.jpg" alt="Card Image">
+    <div class="card container">
+        <img class="giphy-gif" src="image.jpg" alt="Card Image">
         <div class="card-content">
             <h3>Card Title</h3>
-            <p>Card description or content goes here.</p>
-            <div class="container">
-                <button class="button js-modal-trigger" data-target="modal-js-example">Open JS example modal</button>
-            </div>
+            <p class="giphy">Card description or content goes here.</p>
+            <button class="button js-modal-trigger" data-target="modal-js-example">Sign up</button>
         </div>
     </div>
 
@@ -40,12 +44,23 @@
         <div class="modal-background"></div>
         <div class="modal-content">
             <div class="box">
-                <p>Modal JS example</p>
-                <!-- Your content -->
+              <p>
+                <button id="FaceBookbtn" class="button is-link is-focused">Share on FaceBook</button>
+              </p>
+               
             </div>
         </div>
- 
+        <button class="modal-close is-large" aria-label="close"></button>
     </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
 
     <script src="script.js"></script> 
 </body>
