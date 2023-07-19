@@ -3,7 +3,7 @@ var mainButton = document.querySelector(".button")
 var dropdownHeader = document.querySelector(".dropbtn")
 var dropdownOptions = document.querySelector(".dropdown-content")
 var boredAPIResponse = document.querySelector(".boredAPI")
-var GIFEl = document.querySelector(".giphy-gif")
+var cards = document.querySelectorAll(".card")
 
 function getCategory(){
     var type
@@ -34,6 +34,10 @@ function getThingToDo(){
         boredAPIResponse.innerHTML = suggestion
         //do something with the data
         getGIF(suggestion)
+        for (var i = 0; i < cards.length; i++){
+            var card = cards[i]
+            card.classList.remove("is-hidden")
+        }
     })
 }
 
@@ -46,10 +50,14 @@ function getGIF(query){
         //console.log(response.status)
         return response.json()
     }).then(function(json){
-        var GIF = json.data[0]
-        var GIFImage = GIF.images.original.url
-        //console.log(GIFImage)
-        GIFEl.src = GIFImage
+        for (var i = 0; i < 3; i++){
+            var GIFEl = document.querySelector(".giphy-gif" + i)
+            var GIF = json.data[i]
+            var GIFImage = GIF.images.original.url
+            //console.log(GIFImage)
+            GIFEl.src = GIFImage
+        }
+        
     })
 }
 
