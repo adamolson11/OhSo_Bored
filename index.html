@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link link rel="stylesheet" href="style.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhSo_Bored</title>
 </head>
 <body>
   <header class="container">
-    <button class="button is-primary is-outlined">Bored?</button>
+    <button class="button">BORED</button>
       <div class="dropdown">
         <button class="dropbtn">Dropdown</button>
         <div class="dropdown-content">
@@ -24,57 +24,38 @@
           <a href="#">Busywork</a>
         </div>
       </div>
-  </header>
-
-  <aside class="column is-one-quarter menu">
-  
-        <a class="is-active">Manage Your Team</a>
-        <ul>
-          <li><a>Members</a></li>
-          <li><a>Plugins</a></li>
-          <li><a>Add a member</a></li>
-        </ul>
-      </li>
-  </aside>
-
-  <div class="column">
-    <div class="card container">
-      <div class="card-content">
-       
-        <p class="boredAPI"></p>
-      </div>
-    </div>
-
-    <div class="card container">
-      <img class="giphy-gif" src="image.jpg" alt="Card Image">
-      <div class="card-content">
-        <button class="button js-modal-trigger" data-target="modal-js-example">Sign up</button>
-      </div>
-    </div>
-
-    <div id="modal-js-example" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <div class="box">
-          <p>
-            <button id="FaceBookbtn" class="button is-link is-focused">Share on FaceBook</button>
-          </p>
+    </header>
+      <div class="card container is-hidden">
+        <div class="card-content">
+          <!-- <h3>Card Title</h3> -->
+          <p class="boredAPI"></p>
         </div>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Project 1</strong> by <a href="https://jgthms.com">Nathan Pokrandt, Mitchell Kastein, Adam Olson, Doug Gouthro</a>. The source code is un-licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+      <div class="card container is-hidden">
+        <div class="card container is-hidden">
+          <div class="columns">
+            <div class="column is-one-third"><img class="giphy-gif0" src="image.jpg" alt="Card Image"></div>
+            <div class="column is-one-third"><img class="giphy-gif1" src="image.jpg" alt="Card Image"></div>
+            <div class="column is-one-third"><img class="giphy-gif2" src="image.jpg" alt="Card Image"></div>
+          </div>
+        <div class="card-content">
+          <p class="giphy">Some GIFs relevant to the suggestion above</p>
+        </div>
+      </div>
+    </body>
+    </html>
+    <script src="script.js"></script> 
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-content">
+          <div class="box">
+            <p>Modal JS example</p>
+            <!-- Your content -->
+          </div>
+        </div>
+      
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>  
 </body>
 </html>

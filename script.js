@@ -3,7 +3,7 @@ var mainButton = document.querySelector(".button")
 var dropdownHeader = document.querySelector(".dropbtn")
 var dropdownOptions = document.querySelector(".dropdown-content")
 var boredAPIResponse = document.querySelector(".boredAPI")
-var GIFEl = document.querySelector(".giphy-gif")
+var cards = document.querySelectorAll(".card")
 
 function getCategory(){
     var type
@@ -34,6 +34,10 @@ function getThingToDo(){
         boredAPIResponse.innerHTML = suggestion
         //do something with the data
         getGIF(suggestion)
+        for (var i = 0; i < cards.length; i++){
+            var card = cards[i]
+            card.classList.remove("is-hidden")
+        }
     })
 }
 
@@ -46,10 +50,14 @@ function getGIF(query){
         //console.log(response.status)
         return response.json()
     }).then(function(json){
-        var GIF = json.data[0]
-        var GIFImage = GIF.images.original.url
-        //console.log(GIFImage)
-        GIFEl.src = GIFImage
+        for (var i = 0; i < 3; i++){
+            var GIFEl = document.querySelector(".giphy-gif" + i)
+            var GIF = json.data[i]
+            var GIFImage = GIF.images.original.url
+            //console.log(GIFImage)
+            GIFEl.src = GIFImage
+        }
+        
     })
 }
 
@@ -62,48 +70,3 @@ function selectOption(event){
 //event listener for the dropdown to select which option the user wants
 mainButton.addEventListener("click", getThingToDo)
 dropdownOptions.addEventListener("click", selectOption)
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Functions to open and close a modal
-  function openModal($el) {
-    $el.classList.add('is-active');
-  }
-
-  function closeModal($el) {
-    $el.classList.remove('is-active');
-  }
-
-  function closeAllModals() {
-    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
-      closeModal($modal);
-    });
-  }
-
-  // Add a click event on buttons to open a specific modal
-  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
-    const modal = $trigger.dataset.target;
-    const $target = document.getElementById(modal);
-
-    $trigger.addEventListener('click', () => {
-      openModal($target);
-    });
-  });
-
-  // Add a click event on various child elements to close the parent modal
-  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-    const $target = $close.closest('.modal');
-
-    $close.addEventListener('click', () => {
-      closeModal($target);
-    });
-  });
-
-  // Add a keyboard event to close all modals
-  document.addEventListener('keydown', (event) => {
-    const e = event || window.event;
-
-    if (e.keyCode === 27) { // Escape key
-      closeAllModals();
-    }
-  });
-});
