@@ -2,16 +2,6 @@ body{
     background-color: #778899;
 }
 
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content a {
-    color: black;
-}
-
-
 .dropdown {
   position: relative;
   display: inline-block;
