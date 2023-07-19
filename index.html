@@ -8,60 +8,73 @@
     <title>OhSo_Bored</title>
 </head>
 <body>
-    <header class="container">
-        <button class="button">BORED</button>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Education</a>
-                <a href="#">Recreational</a>
-                <a href="#">Social</a>
-                <a href="#">D.I.Y.</a>
-                <a href="#">Charity</a>
-                <a href="#">Cooking</a>
-                <a href="#">Relaxation</a>
-                <a href="#">Music</a>
-                <a href="#">Busywork</a>
-            </div>
+  <header class="container">
+    <button class="button is-primary is-outlined">Bored?</button>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Education</a>
+          <a href="#">Recreational</a>
+          <a href="#">Social</a>
+          <a href="#">D.I.Y.</a>
+          <a href="#">Charity</a>
+          <a href="#">Cooking</a>
+          <a href="#">Relaxation</a>
+          <a href="#">Music</a>
+          <a href="#">Busywork</a>
         </div>
-    </header>
+      </div>
+  </header>
+
+  <aside class="column is-one-quarter menu">
+  
+        <a class="is-active">Manage Your Team</a>
+        <ul>
+          <li><a>Members</a></li>
+          <li><a>Plugins</a></li>
+          <li><a>Add a member</a></li>
+        </ul>
+      </li>
+  </aside>
+
+  <div class="column">
     <div class="card container">
-        <div class="card-content">
-            <!-- <h3>Card Title</h3> -->
-            <p class="boredAPI"></p>
-        </div>
+      <div class="card-content">
+       
+        <p class="boredAPI"></p>
+      </div>
     </div>
+
     <div class="card container">
-        <img class="giphy-gif" src="image.jpg" alt="Card Image">
-        <div class="card-content">
-            <h3>Card Title</h3>
-            <p class="giphy">Card description or content goes here.</p>
-            <button class="button js-modal-trigger" data-target="modal-js-example">Sign up</button>
-        </div>
+      <img class="giphy-gif" src="image.jpg" alt="Card Image">
+      <div class="card-content">
+        <button class="button js-modal-trigger" data-target="modal-js-example">Sign up</button>
+      </div>
     </div>
 
     <div id="modal-js-example" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <div class="box">
-              <p>
-                <button id="FaceBookbtn" class="button is-link is-focused">Share on FaceBook</button>
-              </p>
-               
-            </div>
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <p>
+            <button id="FaceBookbtn" class="button is-link is-focused">Share on FaceBook</button>
+          </p>
         </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
       </div>
-    </footer>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </div>
 
-    <script src="script.js"></script> 
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Project 1</strong> by <a href="https://jgthms.com">Nathan Pokrandt, Mitchell Kastein, Adam Olson, Doug Gouthro</a>. The source code is un-licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
