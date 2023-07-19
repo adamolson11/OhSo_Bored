@@ -8,7 +8,7 @@ var cards = document.querySelectorAll(".card")
 function getCategory(){
     var type
     var dropdownHeaderText = dropdownHeader.innerText
-    if (dropdownHeaderText === "Dropdown"){
+    if (dropdownHeaderText === "Categories"){
         type = ''
     } else {
         //the API query takes the category in lowercase
