@@ -47,3 +47,10 @@ html, body{
   .card p {
     margin: 0;
   }
+
+  .boredAPI {
+    font-family: Bungee Shade;
+  }
+  .is-success{
+    font-family: Monoton;
+  }
