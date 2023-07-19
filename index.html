@@ -8,10 +8,11 @@
     <title>OhSo_Bored</title>
 </head>
 <body>
-  <header class="container">
-    <button class="button">BORED</button>
+  <main class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+    <div class="my-5">
+      <button class="button is-large is-success">BORED?</button>
       <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
+        <button class="dropbtn button">Categories</button>
         <div class="dropdown-content">
           <a href="#">Education</a>
           <a href="#">Recreational</a>
@@ -24,14 +25,14 @@
           <a href="#">Busywork</a>
         </div>
       </div>
-    </header>
+    </div>
+    <div>
       <div class="card container is-hidden">
         <div class="card-content">
           <!-- <h3>Card Title</h3> -->
-          <p class="boredAPI"></p>
+          <p class="boredAPI is-size-1-desktop is-size-5-mobile has-text-centered"></p>
         </div>
       </div>
-      <div class="card container is-hidden">
         <div class="card container is-hidden">
           <div class="columns">
             <div class="column is-one-third"><img class="giphy-gif0" src="image.jpg" alt="Card Image"></div>
@@ -39,23 +40,22 @@
             <div class="column is-one-third"><img class="giphy-gif2" src="image.jpg" alt="Card Image"></div>
           </div>
         <div class="card-content">
-          <p class="giphy">Some GIFs relevant to the suggestion above</p>
+          <p class="giphy has-text-centered">Some GIFs relevant to the suggestion above</p>
         </div>
+    </div>
+  </main>
+  <script src="script.js"></script> 
+  <div id="modal-js-example" class="modal">
+    <div class="modal-background"></div>
+    
+    <div class="modal-content">
+      <div class="box">
+        <p>Modal JS example</p>
+        <!-- Your content -->
       </div>
-    </body>
-    </html>
-    <script src="script.js"></script> 
-    <div id="modal-js-example" class="modal">
-        <div class="modal-background"></div>
-      
-        <div class="modal-content">
-          <div class="box">
-            <p>Modal JS example</p>
-            <!-- Your content -->
-          </div>
-        </div>
-      
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div>  
+    </div>
+    
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>  
 </body>
 </html>
