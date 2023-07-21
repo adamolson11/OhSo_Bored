@@ -2,6 +2,12 @@ html, body{
   background-color: #778899;
 }
 
+header{
+  background-color: #adb7be;
+  font-family: Bungee Shade;
+  border-bottom: 5px solid black;
+}
+
 .dropdown {
 position: relative;
 display: inline-block;
@@ -57,7 +63,7 @@ border: 1px solid #ccc;
   position: fixed;
   bottom: 0;
   right: 0;
-
+  z-index: 1;
 }
   
 

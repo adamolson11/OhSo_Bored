@@ -1,22 +1,28 @@
-# OhSo_Bored
-Project 1- We will be using 2 apis bored API and GIPHY API
+# Oh So Bored
 
-This API will take random query from the bored api which is a third party API that provides random suggestions of things to do. From there, the random suggestions will prompt a GIPHY that will correspond with the suggestion that the random API has provided. 
+## Technologies used
 
-When the user clicks the bored button 
-then the user will receive a suggestion of what to do.
-When the suggestion is rendered it will prompt a related GIPHY image. 
-Then a module will automatically render suggesting they...(sign up or share on social media).
+Bored API: https://www.boredapi.com/
+
+GIPHY API: https://developers.giphy.com/
+
+Bulma CSS Framework: https://bulma.io/ 
+
+Whatever Adam was up to with his modal
+
+## Description
+Welcome to Oh So Bored, the place to go if you're bored! (elaborate)
+
+It's very simple at first: there will be a large button with a dropdown menu next to it, and a modal in the lower right corner. The dropdown can be used to filter which types of responses Bored API returns. Upon pushing the button, two cards will appear below the button. The top card will have the suggestion of what to do from Bored API. Below that will be three GIFs from giphy all relevant to the suggestion Bored API gave. If the first suggestion isn't to your liking, push the large button again to get a different suggestion
+
+The modal can be used to share the suggestion or any of the GIFs to Facebook. It is a work in progress
+
+## What it looks like
+<!-- path inside parentheses -->
+![Oh So Bored Screenshot]()
 
 ## Link to website
 https://adamolson11.github.io/OhSo_Bored/
-______________________________________________________________
-The modal will be used to... ???
-* ideas
-    link to the giphy website
-    or offer the ability to share results on social media.
 
-https://blog.hubspot.com/website/modal-web-design
-
-effect ideas for the modal? 
-Visual Effects - Modals typically blur and/or darken most or all parent elements. This gives the impression that the modal window sits above the other content. some drop shadow around the modal can also create this effect.
+## Notes
+<!-- denote any borrowed code, if any. Else ignore -->
