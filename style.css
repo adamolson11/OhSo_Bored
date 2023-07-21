@@ -29,7 +29,6 @@ display: block;
 border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
-  width: 1000px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -61,3 +60,11 @@ border: 1px solid #ccc;
 
 }
   
+
+
+.boredAPI {
+  font-family: Bungee Shade;
+}
+.is-success{
+  font-family: Monoton;
+}
