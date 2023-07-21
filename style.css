@@ -52,7 +52,7 @@ border: 1px solid #ccc;
 } */
 
 #modalTriggerCard{
-  background-color: green;
+  background-color: rgb(150, 232, 150);
   max-width: 25%;
   position: fixed;
   bottom: 0;
