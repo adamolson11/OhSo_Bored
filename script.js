@@ -4,8 +4,18 @@ var dropdownHeader = document.querySelector(".dropbtn")
 var dropdownOptions = document.querySelector(".dropdown-content")
 var boredAPIResponse = document.querySelector(".boredAPI")
 var cards = document.querySelectorAll(".card")
-mainButton.addEventListener("click", getThingToDo)
-dropdownOptions.addEventListener("click", selectOption)
+
+var urlOgMetaTag = document.querySelector('[property="og:url"]')
+var facebookShare = document.querySelector(".fb-share-button")
+var ogTitleMetaTag = document.querySelector('[property="og:title"]')
+var ogImageMetaTag = document.querySelector('[property="og:image"]')
+
+
+facebookShare.setAttribute("data-href",window.location.href)
+urlOgMetaTag.setAttribute("content",window.location.href)
+
+
+
 
 function getCategory(){
     var type
@@ -34,7 +44,7 @@ function getThingToDo(){
     }).then(function(data){
         var suggestion = data.activity
         boredAPIResponse.innerHTML = suggestion
-        //do something with the data
+        ogTitleMetaTag.setAttribute("content",suggestion)//do something with the data
         getGIF(suggestion)
         for (var i = 0; i < cards.length; i++){
             var card = cards[i]
@@ -56,7 +66,7 @@ function getGIF(query){
             var GIFEl = document.querySelector(".giphy-gif" + i)
             var GIF = json.data[i]
             var GIFImage = GIF.images.original.url
-            //console.log(GIFImage)
+            ogImageMetaTag.setAttribute("content",GIFImage)//console.log(GIFImage)
             GIFEl.src = GIFImage
         }
         
@@ -115,3 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+  mainButton.addEventListener("click", getThingToDo)
+dropdownOptions.addEventListener("click", selectOption)
+
