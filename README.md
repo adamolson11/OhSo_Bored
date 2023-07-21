@@ -5,13 +5,11 @@ This API will take random query from the bored api which is a third party API th
 
 When the user clicks the bored button 
 then the user will receive a suggestion of what to do.
-When the suggeestion is rendered it will prompt a related GIPHY image. 
+When the suggestion is rendered it will prompt a related GIPHY image. 
 Then a module will automatically render suggesting they...(sign up or share on social media).
 
-
-...
-
-
+## Link to website
+https://adamolson11.github.io/OhSo_Bored/
 ______________________________________________________________
 The modal will be used to... ???
 * ideas
