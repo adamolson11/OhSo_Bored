@@ -9,6 +9,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhSo_Bored</title>
+    <meta property="og:url" content="https://www.your-domain.com/your-page.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Your Website Title" />
+<meta property="og:description" content="Your description" />
+<meta property="og:image" content="https://media4.giphy.com/media/VGnLWxs87sAo1UUQL0/giphy.gif" />
 </head>
 <body>
     <div id="fb-root"></div>
@@ -26,12 +31,37 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 <div id= "modalTriggerCard" class="card">
+  <p class= "modalTriggerCardContent" > Sign up to our Newsletter for daily funnies in your inbox!!!</p>
         <div class="card-content">
-            <p class="title">
-                Card Modal Example
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
             </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left">
+              <input class="input" type="password" placeholder="Password">
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control">
+              <button class="button is-success">
+                Sign up!
+              </button>
+            </p>
+          </div>
+          <p class= "modalTriggerCardContent"> OR...</p>
             <button class="button is-primary js-modal-trigger" data-target="modal-js-example">
-                Open Modal
+                Share the Laugh on Facebook!
             </button>
         </div>
     </div>
@@ -41,11 +71,9 @@
 
         <div class="modal-content">
             <div class="box">
-                <p>Modal JS example</p>
+                <p>We hope you found the gifs amusing...Share your results if you like on social media or sign up to our newsletter for funny gifs sent to you daily!!!</p>
                 <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html" data-layout="button_count"></div>
-                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small">
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
-                </div>
+              
             </div>
         </div>
 
