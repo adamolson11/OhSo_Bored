@@ -20,3 +20,6 @@ It's very simple at first: there will be a large button with a dropdown menu nex
 
 ## Link to website
 https://adamolson11.github.io/OhSo_Bored/
+
+# Presentation outline link
+https://docs.google.com/document/d/1aO9TDikizAu3OxARf6QlKS4tt8lbXJeWdu-vXyApP0Q/edit?usp=sharing
