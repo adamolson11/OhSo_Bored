@@ -59,10 +59,13 @@ border: 1px solid #ccc;
 
 #modalTriggerCard{
   background-color: rgb(150, 232, 150);
-  max-width: 25%;
+}
+
+#modalTriggerCardDiv{
   position: fixed;
   bottom: 0;
   right: 0;
+  max-width: 25%;
   z-index: 1;
 }
   

@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monoton&display=swap" rel="stylesheet">
-    <link link rel="stylesheet" href="style.css"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhSo_Bored</title>
-    <meta property="og:url" content="https://www.your-domain.com/your-page.html" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Your Website Title" />
-<meta property="og:description" content="Your description" />
-<meta property="og:image" content="https://media4.giphy.com/media/VGnLWxs87sAo1UUQL0/giphy.gif" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monoton&display=swap" rel="stylesheet">
+  <link link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OhSo_Bored</title>
+  <meta property="og:url" content="https://www.your-domain.com/your-page.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Your Website Title" />
+  <meta property="og:description" content="Your description" />
+  <meta property="og:image" content="https://media4.giphy.com/media/VGnLWxs87sAo1UUQL0/giphy.gif" />
 </head>
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="vKgfSWCq"></script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="vKgfSWCq"></script>
 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-<div id= "modalTriggerCard" class="card">
-  <p class= "modalTriggerCardContent" > Sign up to our Newsletter for daily funnies in your inbox!!!</p>
-        <div class="card-content">
-          <div class="field">
-            <p class="control has-icons-left has-icons-right">
-              <input class="input" type="email" placeholder="Email">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
-            </p>
-          </div>
-          <div class="field">
-            <p class="control has-icons-left">
-              <input class="input" type="password" placeholder="Password">
-              <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
-              </span>
-            </p>
-          </div>
-          <div class="field">
-            <p class="control">
-              <button class="button is-success">
-                Sign up!
-              </button>
-            </p>
-          </div>
-          <p class= "modalTriggerCardContent"> OR...</p>
-            <button class="button is-primary js-modal-trigger" data-target="modal-js-example">
-                Share the Laugh on Facebook!
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <div id="modalTriggerCardDiv" class="is-flex is-flex-direction-column is-align-items-center">
+    <button id="toggleModal" class="button is-warning is-small mb-2">Hide Modal</button>
+    <div id="modalTriggerCard" class="card">
+      <p class= "modalTriggerCardContent" > Sign up to our Newsletter for daily funnies in your inbox!!!</p>
+      <div class="card-content">
+        <div class="field">
+          <p class="control has-icons-left has-icons-right">
+            <input class="input" type="email" placeholder="Email">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="password" placeholder="Password">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control">
+            <button class="button is-success">
+              Sign up!
             </button>
+          </p>
         </div>
+      </div>  
+      <p class= "modalTriggerCardContent"> OR...</p>
+      <button class="button is-primary js-modal-trigger" data-target="modal-js-example">
+        Share the Laugh on Facebook!
+      </button>
     </div>
+  </div>
 
-    <div id="modal-js-example" class="modal">
-        <div class="modal-background"></div>
+  <div id="modal-js-example" class="modal">
+      <div class="modal-background"></div>
 
-        <div class="modal-content">
-            <div class="box">
-                <p>We hope you found the gifs amusing...Share your results if you like on social media or sign up to our newsletter for funny gifs sent to you daily!!!</p>
-                <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html" data-layout="button_count"></div>
-              
-            </div>
-        </div>
+      <div class="modal-content">
+          <div class="box">
+              <p>We hope you found the gifs amusing...Share your results if you like on social media or sign up to our newsletter for funny gifs sent to you daily!!!</p>
+              <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html" data-layout="button_count"></div>
+            
+          </div>
+      </div>
 
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+  </div>
   <header class="">
     <h1 class="is-size-1 has-text-centered has-text-weight-bold">Oh So Bored</h1>
   </header>

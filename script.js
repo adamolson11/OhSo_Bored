@@ -4,6 +4,9 @@ var dropdownHeader = document.querySelector(".dropbtn")
 var dropdownOptions = document.querySelector(".dropdown-content")
 var boredAPIResponse = document.querySelector(".boredAPI")
 var cards = document.querySelectorAll(".card")
+var modal = document.getElementById("modalTriggerCard")
+//this will be the button to toggle the modal appearing or not
+var modalToggle = document.getElementById("toggleModal")
 
 var urlOgMetaTag = document.querySelector('[property="og:url"]')
 var facebookShare = document.querySelector(".fb-share-button")
@@ -48,7 +51,9 @@ function getThingToDo(){
         getGIF(suggestion)
         for (var i = 0; i < cards.length; i++){
             var card = cards[i]
-            card.classList.remove("is-hidden")
+            if (card.id != "modalTriggerCard"){
+              card.classList.remove("is-hidden")
+            }            
         }
     })
 }
@@ -79,9 +84,19 @@ function selectOption(event){
     
 }
 
-//event listener for the dropdown to select which option the user wants
+function toggleModal(){
+  var list = modal.classList
+  if (list.length === 1){
+    list.add("is-hidden")
+    modalToggle.innerText = "Show Modal"
+  } else {
+    list.remove("is-hidden")
+    modalToggle.innerText = "Hide Modal"
+  }
+}
+//event listeners for the modal
 
-
+modalToggle.addEventListener("click", toggleModal)
 
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
@@ -126,7 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+//event listeners for the dropdown and main button
 
-  mainButton.addEventListener("click", getThingToDo)
+mainButton.addEventListener("click", getThingToDo)
 dropdownOptions.addEventListener("click", selectOption)
 
