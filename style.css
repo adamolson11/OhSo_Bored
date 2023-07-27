@@ -69,11 +69,28 @@ border: 1px solid #ccc;
   z-index: 1;
 }
   
-
-
 .boredAPI {
   font-family: Bungee Shade;
 }
 .is-success{
   font-family: Monoton;
+}
+
+/* some media queries to add responsiveness to the modal */
+@media (max-width: 1050px) {
+  #modalTriggerCardDiv{
+    max-width: 33%;
+  }
+}
+
+@media (max-width: 812px) {
+  #modalTriggerCardDiv{
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 532px) {
+  #modalTriggerCardDiv{
+    max-width: 100%;
+  }
 }
