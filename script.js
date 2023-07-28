@@ -13,6 +13,14 @@ var facebookShare = document.querySelector(".fb-share-button")
 var ogTitleMetaTag = document.querySelector('[property="og:title"]')
 var ogImageMetaTag = document.querySelector('[property="og:image"]')
 
+var facebookScript = `(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));`
+
 
 facebookShare.setAttribute("data-href",window.location.href)
 urlOgMetaTag.setAttribute("content",window.location.href)
@@ -74,7 +82,10 @@ function getGIF(query){
             ogImageMetaTag.setAttribute("content",GIFImage)//console.log(GIFImage)
             GIFEl.src = GIFImage
         }
-        
+      var script = document.createElement('script')
+      script.innerText = facebookScript
+      document.body.appendChild(script)
+
     })
 }
 
